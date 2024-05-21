@@ -10,7 +10,7 @@ export const Footer = () => {
 						href="/"
 						className="font-bold text-xl flex"
 					>
-						ClawCraft
+						Clawcraft
 					</a>
 				</div>
 			</section>
