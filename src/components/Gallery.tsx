@@ -3,7 +3,7 @@ import image1 from "../assets/growth.png";
 
 export const Gallery = () => {
 	return (
-		<section id="screenshot" className="container py-24 sm:py-32">
+		<section id="screenshots" className="container py-24 sm:py-32">
 			{/* 3 section */}
 			<h2 className="text-3xl lg:text-4xl font-bold md:text-center">
 				A Little Sneak{" "}
