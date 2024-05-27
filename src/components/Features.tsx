@@ -18,21 +18,39 @@ interface FeatureProps {
 
 const features: FeatureProps[] = [
 	{
-		title: "Dynamic Resource Gathering",
+		title: "Resource Gathering",
 		description:
-			"Efficiently manage your economy with Silly Cats gathering resources from various zones.",
+			"Players gather resources such as catnip, fish, and yarn to fuel their faction's growth and expansion.",
 		image: image4,
 	},
 	{
-		title: "Diverse Unit Types",
+		title: "Unit Creation and Management",
 		description:
-			"Command a unique feline army with distinct abilities and roles to dominate the battlefield.",
+			"Players recruit and command various feline units, each with distinct abilities and roles, and manage their deployment and movement on the battlefield.",
 		image: image3,
 	},
 	{
-		title: "Real-Time Tactical Combat",
+		title: "Building Construction",
 		description:
-			"Engage in thrilling battles with strategic positioning and fog of war mechanics.",
+			"Players establish structures such as scratching posts, cat trees, and lookout towers to fortify their base, produce units, and unlock additional capabilities.",
+		image: image,
+	},
+	{
+		title: "Dynamic Objectives",
+		description:
+			"Players complete dynamic objectives and missions, such as raiding dog kennels, defending territory from invaders, or rescuing stranded cats, to advance the storyline and unlock rewards.",
+		image: image,
+	},
+	{
+		title: "Random Events",
+		description:
+			"Players face unexpected attacks and challenges from rival factions, rogue dogs, or mischievous mice, keeping the gameplay experience dynamic and unpredictable.",
+		image: image,
+	},
+	{
+		title: "Unit Traits and Strategy",
+		description:
+			"Players utilize units with distinct traits, strengths, and weaknesses, employing strategic matchups akin to rock-paper-scissors to outmaneuver and defeat their opponents.",
 		image: image,
 	},
 ];
@@ -70,7 +88,7 @@ export const Features = () => {
 			</div>
 
 			<div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-				{features.map(({ title, description, image }: FeatureProps) => (
+				{features.map(({ title, description }: FeatureProps) => (
 					<Card key={title}>
 						<CardHeader>
 							<CardTitle>{title}</CardTitle>
@@ -78,13 +96,7 @@ export const Features = () => {
 
 						<CardContent>{description}</CardContent>
 
-						<CardFooter>
-							<img
-								src={image}
-								alt="About feature"
-								className="w-[200px] lg:w-[300px] mx-auto"
-							/>
-						</CardFooter>
+						<CardFooter></CardFooter>
 					</Card>
 				))}
 			</div>
