@@ -1,5 +1,12 @@
 import React from "react";
-import image1 from "../assets/growth.png";
+import test from "../assets/test.gif";
+import dev from "../assets/dev.png";
+import dev1 from "../assets/dev-1.png";
+import level1 from "../assets/level-one.png";
+import level2 from "../assets/level-two.png";
+import level3 from "../assets/level-three.png";
+import level4 from "../assets/level-three-1.png";
+import titlescreen from "../assets/title-screen.png";
 
 export const Gallery = () => {
 	return (
@@ -15,33 +22,43 @@ export const Gallery = () => {
 			{/* grid of images 3 by 3 */}
 			<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-8">
 				<img
-					src={image1}
+					src={test}
 					alt="Screenshot 1"
 					className="w-full h-auto object-cover"
 				/>
 				<img
-					src={image1}
+					src={level1}
 					alt="Screenshot 2"
 					className="w-full h-auto object-cover"
 				/>
 				<img
-					src={image1}
+					src={level2}
 					alt="Screenshot 3"
 					className="w-full h-auto object-cover"
 				/>
 				<img
-					src={image1}
+					src={level3}
 					alt="Screenshot 4"
 					className="w-full h-auto object-cover"
 				/>
 				<img
-					src={image1}
+					src={level4}
 					alt="Screenshot 5"
 					className="w-full h-auto object-cover"
 				/>
 				<img
-					src={image1}
+					src={titlescreen}
 					alt="Screenshot 6"
+					className="w-full h-auto object-cover"
+				/>
+				<img
+					src={dev}
+					alt="Screenshot 2"
+					className="w-full h-auto object-cover"
+				/>
+				<img
+					src={dev1}
+					alt="Screenshot 2"
 					className="w-full h-auto object-cover"
 				/>
 			</div>
