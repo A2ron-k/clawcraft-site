@@ -10,7 +10,6 @@ import {
 import { Facebook, Instagram, Linkedin } from "lucide-react";
 
 interface TeamProps {
-	imageUrl: string;
 	name: string;
 	position: string;
 	socialNetworks: SociaNetworkslProps[];
@@ -23,28 +22,36 @@ interface SociaNetworkslProps {
 
 const teamList: TeamProps[] = [
 	{
-		imageUrl: "https://i.pravatar.cc/150?img=35",
 		name: "Aaron Kwah",
 		position: "Game Developer Lead",
-		socialNetworks: [{ name: "Linkedin", url: "http://linkedin.com" }],
+		socialNetworks: [
+			{ name: "Linkedin", url: "https://www.linkedin.com/in/aaronkwah/" },
+		],
 	},
 	{
-		imageUrl: "https://i.pravatar.cc/150?img=60",
 		name: "Kristina Högberg",
 		position: "Level Designer",
 		socialNetworks: [{ name: "Linkedin", url: "http://linkedin.com" }],
 	},
 	{
-		imageUrl: "https://i.pravatar.cc/150?img=36",
 		name: "Rikard Johansson",
 		position: "Unit Asset Designer",
-		socialNetworks: [{ name: "Linkedin", url: "http://linkedin.com" }],
+		socialNetworks: [
+			{
+				name: "Linkedin",
+				url: "https://www.linkedin.com/in/rkaj/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+			},
+		],
 	},
 	{
-		imageUrl: "https://i.pravatar.cc/150?img=17",
 		name: "Eva Tanya Banerjee",
 		position: "Building Asset Designer",
-		socialNetworks: [{ name: "Linkedin", url: "http://linkedin.com" }],
+		socialNetworks: [
+			{
+				name: "Linkedin",
+				url: "https://www.linkedin.com/in/eva-banerjee-b7aa45211/",
+			},
+		],
 	},
 ];
 
@@ -73,22 +80,12 @@ export const Team = () => {
 
 			<div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 gap-y-10">
 				{teamList.map(
-					({
-						imageUrl,
-						name,
-						position,
-						socialNetworks,
-					}: TeamProps) => (
+					({ name, position, socialNetworks }: TeamProps) => (
 						<Card
 							key={name}
 							className="bg-muted/50 relative mt-8 flex flex-col justify-center items-center"
 						>
 							<CardHeader className="mt-8 flex justify-center items-center pb-2">
-								<img
-									src={imageUrl}
-									alt={`${name} ${position}`}
-									className="absolute -top-12 rounded-full w-24 h-24 aspect-square object-cover"
-								/>
 								<CardTitle className="text-center">
 									{name}
 								</CardTitle>

@@ -53,12 +53,12 @@ export const Gallery = () => {
 				/>
 				<img
 					src={dev}
-					alt="Screenshot 2"
+					alt="Screenshot 7"
 					className="w-full h-auto object-cover"
 				/>
 				<img
 					src={dev1}
-					alt="Screenshot 2"
+					alt="Screenshot 8"
 					className="w-full h-auto object-cover"
 				/>
 			</div>
