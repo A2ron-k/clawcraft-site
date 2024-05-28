@@ -1,13 +1,12 @@
 import { buttonVariants } from "@/components/ui/button";
 import {
 	Card,
-	CardContent,
 	CardDescription,
 	CardFooter,
 	CardHeader,
 	CardTitle,
 } from "@/components/ui/card";
-import { Facebook, Instagram, Linkedin } from "lucide-react";
+import { Linkedin } from "lucide-react";
 
 interface TeamProps {
 	name: string;

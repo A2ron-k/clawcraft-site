@@ -1,4 +1,3 @@
-import React from "react";
 import test from "../assets/test.gif";
 import dev from "../assets/dev.png";
 import dev1 from "../assets/dev-1.png";
