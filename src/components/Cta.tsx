@@ -20,9 +20,11 @@ export const Cta = () => {
 				</div>
 
 				<div className="space-y-4 lg:col-start-2">
-					<Button className="w-full md:mr-4 md:w-auto">
-						Start Playing Today!
-					</Button>
+					<a href="https://drive.google.com/file/d/1gOqwK47gmzDNrK3qDw7TfK4OWBlwXxSL/view?usp=sharing">
+						<Button className="w-full md:mr-4 md:w-auto">
+							Start Playing Today!
+						</Button>
+					</a>
 				</div>
 			</div>
 		</section>

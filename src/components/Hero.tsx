@@ -29,7 +29,11 @@ export const Hero = () => {
 				</p>
 
 				<div className="space-y-4 md:space-y-0 md:space-x-4">
-					<Button className="w-full md:w-1/3">Download Now</Button>
+					<a href="https://drive.google.com/file/d/1gOqwK47gmzDNrK3qDw7TfK4OWBlwXxSL/view?usp=sharing">
+						<Button className="w-full md:w-1/3">
+							Download Now
+						</Button>
+					</a>
 
 					<a
 						rel="noreferrer noopener"
